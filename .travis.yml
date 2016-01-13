@@ -1,0 +1,14 @@
+language: cpp
+compiler:
+  - gcc
+
+addons:
+  apt:
+    sources:
+      - george-edison55-precise-backports
+      - ubuntu-toolchain-r-test
+    packages:
+      - cmake-data
+      - cmake
+      - gcc-5
+      - g++-5
