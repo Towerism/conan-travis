@@ -13,10 +13,11 @@ addons:
       - gcc-5
       - g++-5
 
-before_install: pip install --user conan
+before_install:
+  - pip install --user conan
+  - conan install --build
 
 script:
-  - conan install --build
   - mkdir -p build && cd build
   - cmake .. && make
   - bin/conan-travis
