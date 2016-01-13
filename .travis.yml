@@ -13,7 +13,9 @@ addons:
       - gcc-5
       - g++-5
 
-before_install: pip install conan
+before_install:
+  - ci/install-conan.sh
+  - export PATH="~/conan-bin:$PATH"
 
 script:
   - conan install
