@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 git clone https://github.com/conan-io/conan.git ~/conan
 cd ~/conan
